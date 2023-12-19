@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MetersData"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="500" Width="300" Background="LightBlue">
+    <Grid x:Name="grid1" RenderTransformOrigin="0.531,0.469">
+        <TextBox x:Name="WaterCold" Width="172" Height="55.04"  Margin="30,25,98,404" />
+        <TextBox x:Name="WaterHot" Width="172" Height="55.04" Margin="30,85,98,344" />
+        <TextBox x:Name="Electricity" Width="172" Height="55.04" Margin="30,145,98,284" />
+        <TextBox x:Name="Gas" Width="172" Height="55.04" Margin="30,205,98,224" />
+        <Button x:Name="button1" FontSize="14" Content="Передать показания" 
+                Click ="Button_Click" Margin="136,354,10,64" RenderTransformOrigin="-1.15,-9.033" />
+        
 
     </Grid>
 </Window>

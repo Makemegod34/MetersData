@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.SQLite;
 
 namespace MetersData
 {
@@ -19,6 +20,33 @@ namespace MetersData
         public MainWindow()
         {
             InitializeComponent();
+        }
+        
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string textWaterCold = WaterCold.Text;
+            if(textWaterCold !="")
+            {
+                MessageBox.Show(textWaterCold);
+            }
+
+            string textWaterHot = WaterHot.Text;
+            if( textWaterHot !="")
+            {
+                MessageBox.Show(textWaterHot);
+            }
+
+            string textElectricity = Electricity.Text;
+            if(textElectricity !="")
+            {
+                MessageBox.Show(textElectricity);
+            }
+
+            string textGas = Gas.Text;
+            if(textGas !="")
+            {
+                MessageBox.Show(textGas);
+            }
         }
     }
 }
